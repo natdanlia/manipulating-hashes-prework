@@ -5,13 +5,27 @@
 In this lesson, we'll be taking a closer look at multidimensional, or nested, hashes, iteration and higher level hash methods. We'll go through a few challenges together before you move on to the next lab.  
 
 ## More On Building Nested Hashes 
-
+contacts = {
+  "Jon Snow" => {
+    name: "Jon",
+    email: "jon_snow@thewall.we", 
+    favorite_icecream_flavors: ["chocolate", "vanilla"],
+    knows: nil
+  },
+  "Freddy Mercury" => {
+    name: "Freddy",
+    email: "freddy@mercury.com",
+    favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
+  }
+}
 contacts.each do |people, data|
   data.each do |key, items|
     if items == favorite_icecream_flavors
     items << "cake"
   end
 end
+
+contacts
  
 
 Let's say we have the following nested hash: 
