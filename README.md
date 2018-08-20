@@ -20,7 +20,7 @@ contacts = {
 }
 contacts.each do |people, data|
   data.each do |key, items|
-    if items == favorite_icecream_flavors
+    if items == :favorite_icecream_flavors
     items << "cake"
   end
 end
