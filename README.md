@@ -24,6 +24,7 @@ contacts.each do |people, data|
     items << "cake"
   end
 end
+end
 
 contacts
  
