@@ -22,7 +22,7 @@ contacts.each do |people, data|
   data.each do |key, items|
     if key == :favorite_icecream_flavors
     items << "cake"
-  end
+    end
 end
 end
 
