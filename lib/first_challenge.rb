@@ -11,11 +11,15 @@ def first_challenge
       email: "freddy@mercury.com",
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
+
   }
 
   #your code here
-
-
+  
+  jj = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+  jj.delete_if do |items|
+    items == "strawberry"
+  end
   #remember to return your newly altered contacts hash!
   contacts
 end
