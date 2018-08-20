@@ -6,6 +6,14 @@ In this lesson, we'll be taking a closer look at multidimensional, or nested, ha
 
 ## More On Building Nested Hashes 
 
+contacts.each do |people, data|
+  data.each do |key, items|
+    if items == favorite_icecream_flavors
+    items << "cake"
+  end
+end
+ 
+
 Let's say we have the following nested hash: 
 
 ```ruby
